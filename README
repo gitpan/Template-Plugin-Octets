@@ -1,0 +1,31 @@
+NAME
+    Template::Plugin::Octets - Format numeric values as binary octets
+
+VERSION
+    version 0.15
+
+SYNOPSIS
+        [% USE Octets -%]
+        [% Octets.mio(bytes_recv) %]
+
+METHODS
+    kio Format value to kibioctets (2^10 octets).
+
+    mio Format value to mebioctets (2^20 octets).
+
+    gio Format value to gibioctets (2^30 octets).
+
+SEE ALSO
+    Template
+
+    Template::Plugin::Procedural
+
+AUTHOR
+    Anton Gerasimov, <chim@cpan.org>
+
+COPYRIGHT AND LICENSE
+    Copyright (C) 2013 by Anton Gerasimov
+
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+

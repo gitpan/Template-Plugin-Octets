@@ -1,5 +1,5 @@
 {
-   "abstract" : "Format numeric values as binary octets",
+   "abstract" : "TT2 plugin to format numeric values as binary octets",
    "author" : [
       "Anton Gerasimov <chim@cpan.org>"
    ],
@@ -46,5 +46,5 @@
          "url" : "https://github.com/Wu-Wu/Template-Plugin-Octets"
       }
    },
-   "version" : "0.15"
+   "version" : "0.16"
 }

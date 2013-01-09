@@ -22,7 +22,8 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Test::More" : "0.98"
+            "Test::More" : "0.98",
+            "Test::Pod" : "1.22"
          }
       },
       "configure" : {
@@ -46,5 +47,5 @@
          "url" : "https://github.com/Wu-Wu/Template-Plugin-Octets"
       }
    },
-   "version" : "0.16"
+   "version" : "0.17"
 }

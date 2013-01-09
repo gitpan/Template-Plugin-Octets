@@ -4,6 +4,7 @@ author:
   - 'Anton Gerasimov <chim@cpan.org>'
 build_requires:
   Test::More: 0.98
+  Test::Pod: 1.22
 configure_requires:
   ExtUtils::MakeMaker: 0
 dynamic_config: 1
@@ -23,4 +24,4 @@ requires:
 resources:
   bugtracker: https://github.com/Wu-Wu/Template-Plugin-Octets/issues
   repository: https://github.com/Wu-Wu/Template-Plugin-Octets
-version: 0.16
+version: 0.17

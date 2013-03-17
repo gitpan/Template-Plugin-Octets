@@ -3,8 +3,8 @@
    "author" : [
       "Anton Gerasimov <chim@cpan.org>"
    ],
-   "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.64, CPAN::Meta::Converter version 2.112621",
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.300030, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -16,26 +16,49 @@
    "no_index" : {
       "directory" : [
          "t",
-         "inc"
+         "xt",
+         "eg",
+         "examples",
+         "corpus"
+      ],
+      "namespace" : [
+         "t::lib"
+      ],
+      "package" : [
+         "DB"
       ]
    },
    "prereqs" : {
-      "build" : {
-         "requires" : {
-            "Test::More" : "0.98",
-            "Test::Pod" : "1.22"
-         }
-      },
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : 0
+            "ExtUtils::MakeMaker" : "6.30"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Pod::Coverage::TrustPod" : "0",
+            "Test::CPAN::Meta" : "0",
+            "Test::Pod" : "1.41",
+            "Test::Pod::Coverage" : "1.08"
          }
       },
       "runtime" : {
          "requires" : {
-            "Template" : 0,
+            "Template" : "2.22",
             "perl" : "5.008009"
          }
+      },
+      "test" : {
+         "requires" : {
+            "Test::More" : "0.98",
+            "Test::Pod" : "1.22"
+         }
+      }
+   },
+   "provides" : {
+      "Template::Plugin::Octets" : {
+         "file" : "lib/Template/Plugin/Octets.pm",
+         "version" : "0.18"
       }
    },
    "release_status" : "stable",
@@ -43,9 +66,14 @@
       "bugtracker" : {
          "web" : "https://github.com/Wu-Wu/Template-Plugin-Octets/issues"
       },
+      "homepage" : "https://metacpan.org/release/Template-Plugin-Octets",
       "repository" : {
-         "url" : "https://github.com/Wu-Wu/Template-Plugin-Octets"
+         "type" : "git",
+         "url" : "git://github.com/Wu-Wu/Template-Plugin-Octets.git",
+         "web" : "https://github.com/Wu-Wu/Template-Plugin-Octets"
       }
    },
-   "version" : "0.17"
+   "version" : "0.18",
+   "x_authority" : "cpan:CHIM"
 }
+

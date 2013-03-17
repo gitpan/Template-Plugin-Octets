@@ -1,11 +1,14 @@
 package Template::Plugin::Octets;
 
+# ABSTRACT: TT2 plugin to format numeric values as binary octets
+
 use 5.008009;
 use strict;
 use warnings;
 use base 'Template::Plugin::Procedural';
 
-our $VERSION = '0.17';
+our $VERSION = '0.18'; # VERSION
+our $AUTHORITY = 'cpan:CHIM'; # AUTHORITY
 
 use constant KIBIO_DIV => 1024;            # 1 KBio
 use constant MIBIO_DIV => 1024*1024;       # 1 MBio
@@ -36,8 +39,11 @@ sub _formatter {
     return $value;
 }
 
-1;
+1; # End of Template::Plugin::Octets
+
 __END__
+
+=pod
 
 =head1 NAME
 
@@ -45,7 +51,7 @@ Template::Plugin::Octets - TT2 plugin to format numeric values as binary octets
 
 =head1 VERSION
 
-version 0.17
+version 0.18
 
 =head1 SYNOPSIS
 
@@ -69,21 +75,17 @@ to see it in action.
 
 =head1 METHODS
 
-=over
-
-=item B<kio>
+=head2 kio
 
 Format value as kibioctets (2^10 octets).
 
-=item B<mio>
+=head2 mio
 
 Format value as mebioctets (2^20 octets).
 
-=item B<gio>
+=head2 gio
 
 Format value as gibioctets (2^30 octets).
-
-=back
 
 =head1 SEE ALSO
 
@@ -93,13 +95,13 @@ L<Template::Plugin::Procedural>
 
 =head1 AUTHOR
 
-Anton Gerasimov, E<lt>chim@cpan.orgE<gt>
+Anton Gerasimov <chim@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2013 by Anton Gerasimov
+This software is copyright (c) 2013 by Anton Gerasimov.
 
-This library is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself.
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut

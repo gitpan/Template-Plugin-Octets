@@ -3,7 +3,7 @@ NAME
     octets
 
 VERSION
-    version 0.17
+    version 0.18
 
 SYNOPSIS
         [% USE Octets %]
@@ -24,11 +24,14 @@ DESCRIPTION
     to see it in action.
 
 METHODS
-    kio Format value as kibioctets (2^10 octets).
+  kio
+    Format value as kibioctets (2^10 octets).
 
-    mio Format value as mebioctets (2^20 octets).
+  mio
+    Format value as mebioctets (2^20 octets).
 
-    gio Format value as gibioctets (2^30 octets).
+  gio
+    Format value as gibioctets (2^30 octets).
 
 SEE ALSO
     Template
@@ -36,11 +39,11 @@ SEE ALSO
     Template::Plugin::Procedural
 
 AUTHOR
-    Anton Gerasimov, <chim@cpan.org>
+    Anton Gerasimov <chim@cpan.org>
 
 COPYRIGHT AND LICENSE
-    Copyright (C) 2013 by Anton Gerasimov
+    This software is copyright (c) 2013 by Anton Gerasimov.
 
-    This library is free software; you can redistribute it and/or modify it
-    under the same terms as Perl itself.
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
 
